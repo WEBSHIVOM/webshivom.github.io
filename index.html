@@ -101,6 +101,40 @@
     </ul>
   </section>
 
+  <!-- GITHUB PROJECTS -->
+<section>
+  <h3>Live GitHub Projects</h3>
+  <div id="github-projects" class="github-grid">
+    <p class="loading">Loading projects...</p>
+  </div>
+</section>
+
+<script>
+  const username = "webshivom"; // change if needed
+  const container = document.getElementById("github-projects");
+
+  fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
+    .then(res => res.json())
+    .then(repos => {
+      container.innerHTML = "";
+      repos.slice(0, 6).forEach(repo => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <h4>${repo.name}</h4>
+          <p>${repo.description || "No description provided."}</p>
+          <p class="repo-meta">⭐ ${repo.stargazers_count} • 🍴 ${repo.forks_count}</p>
+          <a href="${repo.html_url}" target="_blank">View on GitHub →</a>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(() => {
+      container.innerHTML = "<p>Unable to load projects.</p>";
+    });
+</script>
+
+
   <!-- FOOTER -->
   <footer>
     <p>
