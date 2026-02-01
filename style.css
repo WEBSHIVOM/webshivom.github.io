@@ -1,26 +1,90 @@
-body {
-  font-family: Arial, sans-serif;
+/* Base reset */
+* {
   margin: 0;
-  background: #0f172a;
-  color: #e5e7eb;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background: #020617;
-  padding: 40px;
+/* Global styles */
+body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.6;
 }
 
 h1 {
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+h4 {
+  color: #7dd3fc;
+  margin-bottom: 6px;
+}
+
+p {
+  margin-bottom: 12px;
 }
 
 section {
-  padding: 30px;
+  margin-bottom: 40px;
 }
 
+/* Hero */
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #cbd5f5;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+}
+
+.skills li {
+  margin-bottom: 8px;
+}
+
+/* Cards */
+.card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Footer */
 footer {
-  background: #020617;
-  padding: 15px;
-  font-size: 14px;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+}
+
+a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
