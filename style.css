@@ -1,3 +1,47 @@
+/* =====================
+   THEME VARIABLES
+===================== */
+
+:root {
+  --bg-main: #020617;
+  --bg-card: rgba(2, 6, 23, 0.9);
+  --text-main: #ffffff;
+  --accent-1: #22d3ee;
+  --accent-2: #a78bfa;
+  --accent-3: #f472b6;
+}
+
+/* DARK THEME */
+body.dark {
+  --bg-main: #020617;
+  --bg-card: rgba(2, 6, 23, 0.9);
+  --text-main: #e5e7eb;
+  --accent-1: #38bdf8;
+  --accent-2: #818cf8;
+  --accent-3: #c084fc;
+}
+
+/* NEON THEME */
+body.neon {
+  --bg-main: radial-gradient(circle at top, #22d3ee, #1e1b4b 45%, #020617 70%);
+  --bg-card: rgba(2, 6, 23, 0.85);
+  --text-main: #ffffff;
+  --accent-1: #22d3ee;
+  --accent-2: #a78bfa;
+  --accent-3: #f472b6;
+}
+
+/* LIGHT THEME */
+body.light {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #020617;
+  --accent-1: #2563eb;
+  --accent-2: #7c3aed;
+  --accent-3: #db2777;
+}
+
+
 /* RESET */
 * {
   margin: 0;
