@@ -170,3 +170,21 @@ a {
 a:hover {
   color: #a78bfa;
 }
+
+/* GitHub Grid */
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.repo-meta {
+  font-size: 0.8rem;
+  margin: 8px 0;
+  color: #a5b4fc;
+}
+
+.loading {
+  color: #67e8f9;
+}
+
